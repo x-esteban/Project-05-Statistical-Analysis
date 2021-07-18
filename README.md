@@ -2,69 +2,50 @@
 
 # Project: Statistical Analysis
 
-## Overview
+## Project aim
 
-The goal of this project is for you to practice statistical analysis using the iterative data analysis process. For this project, you will use this [Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) dataset we choose for you. You need to download the `train.csv` dataset then use your statistical analysis skills to analyze this dataset. **The goal of your analysis is to identify the most important features of houses that affect the sale prices.**
+The aim of this project is to use a personal dataset containing all my bike rides (with geospatial and biometric data) to answer several questions:
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. 
+**1.** What variables affect caloric expenditure the most when I'm cycling?
+**2.** Can this caloric expenditure be accurately predicted for any given route?
+**3.** Are races and normal rides significantly different data-wise? In which ways?
+
 
 ---
 
-## Technical Requirements
 
-The technical requirements for this project are as follows:
+## Setup & environment
 
-* Try to apply everything you have learned so far about data analysis (in creative ways if you can) such as data cleaning, data manipulation, data visualization, and various statistical analysis methods.
+This project has been created and run using **Python 3.8.8**, and I'm aware that earlier versions could potentially generate some conflicts, specially when parsing *gpx* files or displaying them on a map via **Selenium**.
 
-* Apply the iterative data analysis process -- setting expectations, collecting information, and reacting to data / revising expectations.
+The project is structured in such a way that anyone with a **SportTracks** account and some riding activity can easily replicate its results.
 
-* Conduct your analysis in Jupyter Notebook using Pandas, Numpy, Scipy, Matplotlib, Seaborn, Plotly, and other Python libraries you have learned, as necessary.
+All necessary libraries are included in the *statistical-analysis* notebook. 
 
-* It will be mandatory to use 3 different inferential statistics methods if using a prediction algorithm (regression / time series / classification) or 5 inferential methods without predictions.
 
-* At least 5 interactive plots will be needed to do the presentation, at least 1 of them must use ipywidgets and at least one of them must use plotly.
+---
 
-## Necessary Deliverables
 
-The following deliverables should be pushed to your Github repo for this project.
+## Internal structure
 
-* **A Jupyter Notebook (statistical-analysis.ipynb)** containing your Python codes, outputs, and data visualizations. Make sure to include explanations for each of your steps in Markdown cells or Python comments.
+The project is structured into the following sections:
 
-* [optional] A `README.md` file containing any additional information.
+1. Data wrangling.
+2. Data exploration.
+3. Data visualization.
+4. Prediction: Linear Regression and Multiple Linear Regression.
+5. Prediction: model optimization with *Sklearn*.
+6. Hypothesis testing.
+7. Conclusions.
+8. Bonus: parsing and mapping of *gpx* files.
 
-## Suggested Ways to Get Started
 
-1. Explore data and understand what the fields mean.
+---
 
-1. Examine the relationships between the sales price and other features in the dataset. Use data visualization techniques to help you gain intuitive understanding of the relationships.
 
-1. Make informed guess on which features should be investigated in depth.
+## Notes and warnings
 
-1. Data cleaning & manipulation. Apply the following techniques as appropriate:
-    * Adjust skewed data distribution.
-    * Remove columns with high proportion of missing values.
-    * Remove records with missing values.
-    * Feature reduction.
-    * Convert categorical data to numerical.
+My statistical skills have expanded quite a bit since this project was finished, and it's therefore expected to find some flaws in it. For example, data normalization wasn't used, nor was the small *race* sample subjected to oversampling, which could have potentially improved the accuracy of some results.
 
-1. Compute field relationship scores with the chosen statistical model.
 
-1. Present your findings in statistical summary and/or data visualizations.
-
-## Project Feedback + Evaluation
-
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
-
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
-
-* __Total__: Your instructors will give you a total score on your project between:
-
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
+---
