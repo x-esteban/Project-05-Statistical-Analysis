@@ -26,7 +26,7 @@ All necessary libraries are included in the *statistical-analysis* notebook.
 ---
 
 
-## Internal structure 📖
+## Internal structure 📚
 
 The project is structured into the following sections:
 
