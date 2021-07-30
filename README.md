@@ -2,7 +2,7 @@
 
 # Project: Statistical Analysis
 
-## Project aim
+## Project aim ✔
 
 The aim of this project is to use a personal dataset containing all my bike rides (with geospatial and biometric data) to answer several questions:
 
@@ -14,7 +14,7 @@ The aim of this project is to use a personal dataset containing all my bike ride
 ---
 
 
-## Setup & environment
+## Setup & environment ⚙
 
 This project has been created and run using **Python 3.8.8**, and I'm aware that earlier versions could potentially generate some conflicts, specially when parsing *gpx* files or displaying them on a map via **Selenium**.
 
@@ -26,7 +26,7 @@ All necessary libraries are included in the *statistical-analysis* notebook.
 ---
 
 
-## Internal structure
+## Internal structure 📖
 
 The project is structured into the following sections:
 
@@ -43,7 +43,7 @@ The project is structured into the following sections:
 ---
 
 
-## Notes and warnings
+## Notes and warnings ⁉
 
 My statistical skills have expanded quite a bit since this project was finished, and it's therefore expected to find some flaws in it. For example, data normalization wasn't used, nor was the small *race* sample subjected to oversampling, which could have potentially improved the accuracy of some results.
 
